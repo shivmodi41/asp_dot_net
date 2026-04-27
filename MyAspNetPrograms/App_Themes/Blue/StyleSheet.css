@@ -1,0 +1,14 @@
+﻿body {
+    background-color:gray;
+}
+.btn{
+    width:200px;
+    height:30px;
+    font-size:14pt;
+    color:white;
+}
+.btn:hover{
+    
+    font-size:30px;
+    cursor:pointer;
+}

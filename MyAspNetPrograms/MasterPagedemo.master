@@ -1,0 +1,49 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPagedemo.master.vb" Inherits="MasterPagedemo" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            height: 33px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        
+        
+            <table style="width:100%;">
+                <tr>
+                    <td class="auto-style1">
+                        <asp:Image ID="Image1" runat="server" Height="100px" ImageUrl="~/fafery.jpg" Width="900px" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/mphome.aspx">home</asp:HyperLink>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:HyperLink ID="HyperLink2" runat="server">about us</asp:HyperLink>
+&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:HyperLink ID="HyperLink3" runat="server">contact us</asp:HyperLink>
+                    </td>
+                </tr>
+                <tr>
+                    <td><asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder></td>
+                </tr>
+                <tr>
+                    <td>copyright@2023</td>
+                </tr>
+            </table>
+        
+        
+    </div>
+    </form>
+</body>
+</html>
