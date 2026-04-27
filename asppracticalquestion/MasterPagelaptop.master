@@ -1,0 +1,37 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPagelaptop.master.vb" Inherits="MasterPagelaptop" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    
+        <table style="width:100%;">
+            <tr>
+                <td>
+                    <asp:HyperLink ID="add" runat="server" NavigateUrl="~/adddetail.aspx">adddetail</asp:HyperLink>
+                </td>
+                <td>
+                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/editdetail.aspx">editdetail</asp:HyperLink>
+                </td>
+                <td>
+                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/search.aspx">search</asp:HyperLink>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3"> <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder></td>
+            </tr>
+            <tr>
+                <td colspan="3">copyright@2023</td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
